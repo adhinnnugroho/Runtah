@@ -1,0 +1,654 @@
+/* -----------------
+    font    
+----------------------*/
+@font-face {
+  font-family: "Regular";
+  src: url("../../font/Nunito/Nunito-Black.ttf"),
+    url("../../font/Nunito/Nunito-BlackItalic.ttf"),
+    url("../../font/Nunito/Nunito-Italic.ttf"),
+    url("../../font/Nunito/Nunito-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "terang";
+  src: url("../../font/Nunito/Nunito-ExtraLight.ttf"),
+    url("../../font/Nunito/Nunito-ExtraLightItalic.ttf"),
+    url("../../font/Nunito/Nunito-Light.ttf"),
+    url("../../font/Nunito/Nunito-LightItalic.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("../../font/Nunito/Nunito-Bold.ttf"),
+    url("../../font/Nunito/Nunito-BoldItalic.ttf"),
+    url("../../font/Nunito/Nunito-ExtraBold.ttf"),
+    url("../../font/Nunito/Nunito-ExtraBoldItalic.ttf"),
+    url("../../font/Nunito/Nunito-SemiBold.ttf"),
+    url("../../font/Nunito/Nunito-SemiBoldItalic.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ------------------
+    Navbar 
+-------------------- */
+.img-profile {
+  transform: scale(0.77);
+}
+
+.pc_version .nav-link {
+  font-family: "Bold";
+  font-size: 20px;
+}
+
+
+
+/* ------------------
+  profile
+---------------------*/
+.card-sidebar .img-profile {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.card-sidebar .item-menu {
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.card-sidebar .item-menu.active {
+  background-color: var(--bs-gray-200);
+}
+
+.card-sidebar .item-menu:hover {
+  background-color: var(--bs-gray-200);
+}
+
+.card-profile .preview-profile {
+  width: 60%;
+  height: 60%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.pc_version .card-profile {
+  margin-top: 16% !important;
+  margin-bottom: 7% !important;
+}
+
+.pc_version .card-profile h5 {
+  font-family: "Bold";
+  font-size: 20px;
+  color: black;
+}
+
+.pc_version .card-profile p {
+  color: black;
+}
+
+.pc_version .sidebar_user_aktif {
+  background-color: green !important;
+  color: white !important;
+}
+
+/* ------------------
+    slider
+---------------------*/
+.pc_version .pc_slider img {
+  margin-bottom: 20% !important;
+  width: 630px !important;
+  height: 329px;
+  border-radius: 10px;
+}
+
+.pc_version .pc_slider {
+  margin-top: 10% !important;
+}
+
+/* -----------------
+    menu
+-------------------- */
+.pc_version .menu .card {
+  border-color: white;
+}
+
+.pc_version .menu .card img {
+  width: 86px;
+  height: 56px;
+}
+
+.pc_version .menu .btn {
+  text-align: left !important;
+  font-family: "Bold" !important;
+}
+
+.pc_version .menu .card-title {
+  height: 30px;
+  font-family: "Bold";
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  left: -20%;
+}
+
+/* -----------------
+    Login 
+-------------------- */
+
+.login_area {
+  margin-top: 12rem;
+}
+
+@media(min-width: 992px) {
+  .login_area img {
+    transform: scale(0.77);
+    width: 45rem;
+    position: relative;
+    right: 10rem;
+  }
+
+  .login_area .not_account {
+    font-family: "Bold";
+    font-size: 1.6rem;
+    margin-top: 5% !important;
+    padding-bottom: 16% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .login_area img {
+    transform: scale(0.77);
+    width: 25rem;
+    position: relative;
+    right: 2rem;
+    left: -3rem;
+  }
+
+  .login_area .not_account {
+    font-family: "Bold";
+    font-size: 1.6rem;
+    margin-top: 4rem;
+  }
+
+  .login_area {
+    margin-bottom: 5rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .login_area img {
+    transform: scale(0.77);
+    width: 23rem;
+    position: relative;
+    right: 2rem;
+    left: -3rem;
+  }
+}
+
+/* ----------------
+  daftar nama-nama sampah
+------------------- */
+.pc_version .nama_sampah {
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 2rem !important;
+  margin-right: 2rem !important;
+  margin-bottom: 10rem !important;
+}
+
+.pc_version figcaption {
+  text-align: left;
+  padding-top: 2rem;
+  padding-left: .6rem;
+}
+
+@media(min-width:992px) {
+  .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    width: 12rem;
+    transition: .5s;
+    height: 18rem;
+  }
+
+  .figure:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+  }
+
+  .pc_version .figure img {
+    padding-top: 2rem;
+    transform: scale(1);
+    width: 155px;
+    height: 155px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobile_version .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    width: 9.1rem;
+    height: 18rem;
+  }
+}
+
+
+@media(min-width: 360px) {
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 2rem !important;
+    margin-bottom: 5rem !important;
+  }
+}
+
+@media(min-width: 393px) {
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 1rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .mobile_version .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    width: 9.5rem;
+    height: 18rem;
+  }
+}
+
+
+@media(min-width: 412px) {
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 1rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .mobile_version .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    width: 10rem;
+    height: 18rem;
+  }
+}
+
+@media(min-width: 390px) {
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-right: 2rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .mobile_version .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    width: 10rem;
+    height: 18rem;
+  }
+}
+
+
+@media(min-width: 414px) {
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .mobile_version .figure {
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    width: 11rem !important;
+    height: 18rem;
+  }
+}
+
+.figure img {
+  transform: scale(0.66);
+}
+
+.figure h5 {
+  font-family: "Bold";
+  font-size: 20px;
+}
+
+.figure p {
+  font-family: 'terang';
+  font-size: 20px;
+  color: black !important;
+}
+
+.portfolio-item {
+  max-height: 400px;
+}
+
+/*--------------------
+  sidebar user
+--------------------*/
+.pc_version .sidebar_user {
+  margin-top: 20% !important;
+}
+
+.pc_version .sidebar_user h6 {
+  font-family: "Bold";
+  font-size: 20px;
+  padding-left: 5%;
+}
+
+.pc_version .sidebar_user a {
+  text-decoration: none;
+  color: black;
+}
+
+/* -----------------
+    Detail Sampah
+-------------------- */
+.pc_version .detail_sampah {
+  margin-top: 10%;
+}
+
+.pc_version .img-sampah {
+  width: 100%;
+
+}
+
+.pc_version .preview_sampah {
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30% !important;
+}
+
+.qty {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.qty .btn,
+.checkout-item .btn {
+  height: 38px;
+  width: 38px;
+  padding: 3px;
+  color: #fff;
+  display: inline-block;
+}
+
+.qty span,
+.checkout-item span {
+  line-height: 38px;
+}
+
+
+@media(max-width: 992px) {
+
+  /*--------------------
+    login mobile
+  --------------------*/
+  .mobile_version .login_area_mobile {
+    margin-top: 35% !important;
+  }
+
+  .mobile_version .login_area_mobile h4 {
+    font-family: "Bold";
+    font-size: 30px;
+  }
+
+  .mobile_version .login_area_mobile p {
+    font-family: 'terang';
+    font-size: 20px;
+  }
+
+  .mobile_version .login_area_mobile .label_input,
+  .mobile_version .login_area_mobile .link_daftar {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black !important;
+  }
+
+  .mobile_version .login_area_mobile .link_daftar {
+    font-size: 25px !important;
+  }
+
+  /*--------------------
+    navbar bawah
+  --------------------*/
+  .mobile {
+    background-color: white;
+  }
+
+  .mobile ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .mobile ul li a svg {
+    position: relative;
+    z-index: 99;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .5s;
+    color: black;
+  }
+
+  .mobile ul li a span {
+    position: absolute;
+    color: black;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: .05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .mobile ul li.active a span {
+    opacity: 1;
+    justify-content: center !important;
+    align-items: center !important;
+    transform: translateY(10px);
+  }
+
+
+  .mobile ul li.active a svg {
+    justify-content: center !important;
+    align-items: center !important;
+    transform: translateY(-35px);
+  }
+
+  .mobile .indicator {
+    position: absolute;
+    top: -38%;
+    width: 55px;
+    height: 55px;
+    left: 2rem;
+    background-color: green;
+    border-radius: 50%;
+    transition: .5s;
+    border: 3px solid black;
+  }
+
+
+
+
+  .mobile_version .navbar {
+    background-color: #ffffff;
+  }
+
+  .mobile_version .username {
+    font-family: "Bold";
+    font-size: 20px;
+    color: black;
+    padding-left: 5%;
+  }
+
+  /*--------------------
+    mobile slider
+  --------------------*/
+
+  .mobile_version .mobile_slider {
+    margin-top: 20% !important;
+    margin-bottom: 10% !important;
+  }
+
+
+  /* -----------------
+    menu
+  -------------------- */
+  .mobile_version .menu .card {
+    border-color: white;
+  }
+
+  .mobile_version .menu .card img {
+    width: 86px;
+    height: 56px;
+  }
+
+  .mobile_version .menu .btn {
+    text-align: left !important;
+    font-family: "Bold" !important;
+  }
+
+  .mobile_version .menu .card-title {
+    height: 30px;
+    font-family: "Bold";
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    left: -20%;
+  }
+
+  /* -----------------
+    slider
+  -------------------- */
+  .mobile_version .mobile_version_slider .mobile_slider {
+    margin-top: 30% !important;
+  }
+
+  .mobile_version .mobile_version_slider .mobile_slider img {
+    border-radius: 10px;
+  }
+
+  /* -----------------
+    daftar nama-nama sampah
+  -------------------- */
+  .mobile_version .nama_sampah {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 30% !important;
+  }
+
+  .mobile .navbar_active {
+    color: green !important;
+    font-weight: bold;
+  }
+
+  /*--------------------
+    profile
+  --------------------*/
+  .mobile_version .foto_profile {
+    margin-top: 40% !important;
+  }
+
+  .mobile_version .foto_profile .img-profile {
+    width: 65px;
+  }
+
+  .mobile_version .foto_profile h6 {
+    font-family: "Bold";
+    font-size: 20px;
+    color: black;
+    margin-top: 6% !important;
+    padding-left: 6%;
+  }
+
+  .mobile_version .foto_profile .link_profile {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobile_version .foto_profile .item-menu {
+    font-family: "Bold";
+    font-size: 30px;
+    color: black;
+    padding-bottom: 6% !important;
+  }
+
+  .mobile_version .foto_profile .sidebar_user {
+    margin-top: -10% !important;
+  }
+
+  .mobile_version .mobile_profile a {
+    font-family: "Bold";
+    font-size: 30px;
+    color: black;
+  }
+
+  .mobile_version .card-profile form {
+    margin-bottom: 30% !important;
+  }
+
+  .mobile_version .update_password {
+    margin-top: 50%;
+  }
+
+  .mobile_version .update_password label {
+    font-family: "Bold";
+    color: black !important;
+    font-size: 16px;
+  }
+
+  .mobile_version .update_password .invalid-feedback {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Bold";
+  }
+
+  .mobile_version .bantuan {
+    margin-top: 40%;
+  }
+
+  .mobile_version .bantuan button {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobile_version .bantuan button:hover {
+    color: black;
+  }
+}
+
+.sticky-footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 10rem !important;
+  padding-left: 10px;
+  line-height: 50px;
+  position: absolute;
+  bottom: 0;
+}
